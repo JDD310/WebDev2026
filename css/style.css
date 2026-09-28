@@ -1,31 +1,58 @@
+/* Styles the page header and keeps it centered. */
 header {
-  background-color:  lightgray;
+  background-color: lightgray;
   text-align: center;
 }
+
+/* Main heading styles for section titles. */
 h2 {
   font-size: 25px;
   text-align: center;
 }
+
+/* Subheading styles for smaller section labels. */
 h3 {
   font-size: 20px;
   text-align: center;
 }
+
+/* Smaller text headings aligned to the left side of the content. */
 h4 {
   font-size: 15px;
   text-align: left;
 }
+
+/* Sets the overall page background color. */
 body {
   background-color: lightgray;
 }
+
+/* Applies a clean sans-serif font to all elements. */
 * {
   font-family: sans-serif;
 }
+
+/* Makes images responsive-ish and centered with rounded corners. */
 img {
   width: 20%;
   border-radius: 8px;
   display: block;
   margin: auto;
 }
+
+/* Centers and adds spacing to background content blocks. */
+#background {
+  text-align: center;
+  padding: 10px;
+}
+
+/* Centers and adds spacing to list sections. */
+#list {
+  text-align: center;
+  padding: 10px;
+}
+
+/* Styles the clickable buttons used for navigation or actions. */
 .button {
   background-color: lightslategrey;
   border: none;
@@ -38,7 +65,35 @@ img {
   margin: 4px 2px;
   cursor: pointer;
 }
+
+/* Aligns informational list entries to the left with small padding. */
 .listelements-info {
   text-align: left;
   padding: 5px;
+}
+
+/* Creates a flex row layout for grouped content. */
+.flex-container {
+  display: flex;
+}
+
+/* Styles each card-like content box inside the flex layout. */
+.box {
+  background-color: lightgray;
+  padding: 20px;
+  margin: 10px;
+}
+
+/* Centers the wrapper content vertically and horizontally inside a compact height. */
+#background_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+/* Makes the origins and format sections share equal width in a flex row. */
+#origins, #format {
+  flex: 1;
+  margin: 10px;
 }
