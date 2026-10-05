@@ -66,6 +66,13 @@ img {
   cursor: pointer;
 }
 
+/* Styles the list elements with a specific font size and left alignment. */
+.listelements {
+  font-size: 15px;
+  text-align: left;
+  padding: 5px;
+}
+
 /* Aligns informational list entries to the left with small padding. */
 .listelements-info {
   text-align: left;
