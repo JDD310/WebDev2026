@@ -54,7 +54,7 @@ img {
 
 /* Styles the clickable buttons used for navigation or actions. */
 .button {
-  background-color: lightslategrey;
+  background-color: black;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -64,6 +64,12 @@ img {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+}
+
+/* Keeps button links readable against the dark background. */
+.button a,
+.button a:visited {
+  color: white;
 }
 
 /* Styles the list elements with a specific font size and left alignment. */
@@ -103,4 +109,24 @@ img {
 #origins, #format {
   flex: 1;
   margin: 10px;
+}
+
+/* Stacks the background sections on screens 600px wide or narrower. */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  #background_wrapper {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #origins, #format {
+    margin: 8px 0;
+  }
+
+  #background img {
+    width: 70% !important;
+  }
 }
